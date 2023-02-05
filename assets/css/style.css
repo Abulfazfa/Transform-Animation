@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.container{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 350px;
+    height: 150px;
+    border-bottom: 5px solid brown;
+    border-radius: 10px;
+}
+.cndl-body{
+    background-color: aliceblue;
+    margin-left: 20px;
+
+    
+}
+.eyes{
+    text-align: center;
+    font-weight: bold;
+}
+.mouse{
+    width: 6px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    animation-name: mouse;
+    animation-duration: 5s;
+    visibility: hidden;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+.big-eyes{
+    animation-name: eyes;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.candle{
+    position: relative;
+}
+.little .cndl-body{
+    width: 35px;
+    height: 70px;
+    animation-name: little-candle;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.big .cndl-body{
+    width: 27px;
+    height: 95px;
+    animation-name: big-candle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.ip{
+    position: absolute;
+    border: 1px solid black;
+    width: 1px;
+    height: 15px;
+    background-color: transparent;
+    margin: auto;
+    top: -15px;
+    left: 70%;
+}
+.cndl-fire{
+    position: absolute;
+    left: 63%;
+    top: -30px;
+    background-color: red;
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: fire;
+    animation-duration: 5s;
+    animation-delay: 0.65s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes big-candle{
+   0%{
+    height: 95px;
+   }
+   10%{
+    height: 105px;
+   }
+   25%{
+    height: 95px;
+   }
+   50%{
+
+   }
+   75%{
+
+   }
+   100%{
+
+   }
+}
+@keyframes eyes{
+      0%{
+        text-align: center;
+       }
+       10%{
+        text-align: start;
+       }
+       25%{
+        text-align: center;
+       }
+       45%{
+
+       }
+       50%{
+    
+       }
+       75%{
+    
+       }
+       100%{
+    
+       }
+}
+ @keyframes mouse{
+       0%{
+        left: 49%;
+        width: 5px;
+        height: 6px;
+        visibility: visible;
+       }
+       10%{
+        width: 8px;
+        height: 11px;
+       }
+       15%{
+        visibility: hidden;
+       }
+       20%{
+
+       }
+       25%{
+
+       }
+       50%{
+    
+       }
+       75%{
+    
+       }
+       100%{
+    
+       }
+
+}
+@keyframes fire{
+    0%{
+        
+    }
+    10%{
+        scale: 0.1;
+        visibility: hidden;
+        left: 20px;
+    }
+   50%{
+    visibility: hidden;
+   }
+   100%{
+    
+   }
+    
+}   
+@keyframes little-candle{
+    0%{
+        
+    }
+    10%{
+        width: 40px;
+        height: 60px;
+        background-color: lightcoral;
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}  
